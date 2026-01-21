@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
-        <title>Home « nerotv.live</title>
+        <title>Home « Nerofy</title>
         <link rel="icon" href="/assets/nerofy/img/logo-180.png" type="image/png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="/assets/nerofy/css/shared.css" rel="stylesheet">
         <link href="/assets/nerofy/css/overrides.css" rel="stylesheet">
     </head>
-    <body data-bs-theme="dark" class="overflow-hidden">
+    <body data-bs-theme="dark">
         <div class="content">
-
+            <div id="header">
+                <div class="header-content">
+                    <h1>NEUE SEITE IN ARBEIT...</h1>
+                    <button class="btn" onclick="location.href='https://nerofy.de/old';">KLICKE HIER UM ZUR ALTEN WEBSITE ZU KOMMEN</button>
+                </div>
+            </div>
         </div>
         <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/assets/nerofy/js/shared.js"></script>
-        <script>initMenu();</script>
+        <script>
+            addEventListener("DOMContentLoaded", () => {
+                initMenu().then(function() {
+                    document.getElementById("menu").querySelector(".index-link").classList.add("active");
+                });
+            });
+        </script>
     </body>
 </html>

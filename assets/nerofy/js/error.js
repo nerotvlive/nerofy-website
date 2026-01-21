@@ -47,7 +47,7 @@ addEventListener("DOMContentLoaded", () => {
         document.querySelector(".error-title").innerText = urlParams.get("error");
         createTicker(urlParams.get("error"));
     } else {
-        createTicker("UNKNOWN ERROR");
+        createTicker("UNBEKANNTER FEHLER");
     }
     if(urlParams.has("message")) {
         document.querySelector(".error-message").innerText = urlParams.get("message");

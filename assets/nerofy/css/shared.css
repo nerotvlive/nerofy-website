@@ -1,5 +1,5 @@
 :root {
-
+    --bg: #060809;
 }
 
 * {
@@ -7,13 +7,12 @@
 }
 
 body {
+    background-color: var(--bg);
 
     .content {
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        top: 0; bottom: 0;
+        left: 0; right: 0;
 
         #menu {
             background: linear-gradient(#00000060, #00000010);
@@ -25,7 +24,60 @@ body {
             user-select: none;
 
             .navbar-brand {
+                transition: all 0.15s ease;
+            }
 
+            .navbar-brand:hover {
+                color: var(--bs-primary-text-emphasis);
+                scale: 1.1;
+                rotate: -1deg;
+            }
+
+            ul {
+                gap: 0.25rem;
+
+                li {
+                    a {
+                        border: 1px solid transparent;
+                        background: none;
+                        border-radius: var(--bs-border-radius);
+                    }
+
+                    a:hover {
+                        background: linear-gradient(-45deg,#ffffff25,#ffffff10);
+                        border: 1px solid var(--bs-border-color-translucent);
+                        backdrop-filter: blur(16px);
+                        cursor: pointer;
+                    }
+
+                    a:active {
+                        background: linear-gradient(-45deg,#ffffff50,#ffffff25);
+                        border: 1px solid var(--bs-border-color-translucent);
+                    }
+
+                    a.active {
+                        scale: 1;
+                        transition: all 0.15s ease;
+                        background: linear-gradient(-45deg,#ffffff75,#ffffff50);
+                        border: 1px solid var(--bs-border-color-translucent) !important;
+                        cursor: unset;
+                    }
+                }
+            }
+        }
+
+        #header {
+            height: 100%;
+
+            .header-content {
+                position: absolute;
+                top: 0; bottom: 0;
+                left: 0; right: 0;
+                background: linear-gradient(transparent,var(--bg));
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
