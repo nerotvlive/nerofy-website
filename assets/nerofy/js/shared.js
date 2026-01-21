@@ -4,7 +4,7 @@ async function initMenu() {
     if(!document.getElementById("menu")) {
         if(document.querySelector(".content")) {
             const content = document.querySelector(".content");
-            let menu = "<div id='menu' class='navbar navbar-expand-lg'><div class='container-fluid container-lg'><a class='navbar-brand' href='/'>NEROFY</a><button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button><div class='collapse navbar-collapse' id='navbarSupportedContent'><ul class='navbar-nav me-auto mb-2 mb-lg-0'>%1</ul>%2</div></div></div>";
+            let menu = "<div id='menu' class='navbar navbar-expand-lg'><div class='container-fluid container-lg'><a class='navbar-brand excluded' href='/'>NEROFY</a><button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button><div class='collapse navbar-collapse' id='navbarSupportedContent'><ul class='navbar-nav me-auto mb-2 mb-lg-0'>%1</ul>%2</div></div></div>";
 
             let menuContent = "";
 
