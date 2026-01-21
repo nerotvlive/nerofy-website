@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>ERROR 404 « nerotv.live</title>
+        <title>ERROR « nerotv.live</title>
         <link rel="icon" href="/assets/nerofy/img/logo-180.png" type="image/png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,9 +14,10 @@
         <div class="ticker-loop-background" id="bg-ticker"></div>
         <div class="content">
             <div class="w-100 m-0 p-0 h-100 d-flex flex-column justify-content-center align-items-center">
-                <h1 style="font-size: 6rem; font-weight: 1000;" class="error-title">ERROR 404</h1>
-                <h4 class="opacity-50 error-message" style="font-weight: 1000;">RESOURCE NOT FOUND!</h4>
+                <h1 style="font-size: 6rem; font-weight: 1000;" class="error-title">UNKNOWN ERROR</h1>
+                <h4 class="opacity-50 error-message" style="font-weight: 1000;">SOMETHING WENT TERRIBLY WRONG!</h4>
                 <div class="d-flex gap-3">
+                    <button type="button" class="btn btn-reload" onclick="location.reload();">Reload</button>
                     <button type="button" class="btn btn-danger btn-back" onclick="location.href='/';">Back to home</button>
                 </div>
             </div>
@@ -24,9 +25,5 @@
         <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/assets/nerofy/js/shared.js"></script>
         <script src="/assets/nerofy/js/error.js"></script>
-        <script>addEventListener("DOMContentLoaded", () => {
-            initMenu();
-            createTicker("ERROR 404");
-        });</script>
     </body>
 </html>
