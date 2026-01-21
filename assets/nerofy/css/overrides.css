@@ -50,16 +50,12 @@
 
 @font-face {
     font-family: 'Excluded';
-    src: url('/assets/nerofy/fonts/Excluded.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    src: url('https://nerofy.de/assets/nerofy/fonts/Excluded.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 @font-face {
     font-family: 'ExcludedItalic';
-    src: url('/assets/nerofy/fonts/ExcludedItalic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-* {
-    font-family: 'Excluded', serif;
+    src: url('https://nerofy.de/assets/nerofy/fonts/ExcludedItalic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 body {
@@ -177,5 +173,13 @@ body {
 
     .btn-dark:active {
         background: linear-gradient(-45deg,var(--bs-dark-transparent-3),var(--bs-dark-transparent-2)) !important;
+    }
+
+    .excluded {
+        font-family: 'Excluded', serif;
+    }
+
+    .excluded-italic {
+        font-family: 'ExcludedItalic', serif;
     }
 }
