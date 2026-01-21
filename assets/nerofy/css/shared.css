@@ -68,6 +68,7 @@ body {
 
         #header {
             height: 100%;
+            background: #ffffff10;
 
             .header-content {
                 position: absolute;
@@ -76,9 +77,25 @@ body {
                 background: linear-gradient(transparent,var(--bg));
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
             }
         }
+
+        .animation-float {
+            animation: float 2s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px); /* Bewegt sich 8px nach oben */
+    }
+    100% {
+        transform: translateY(0px);
     }
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Netzwerk « Nerofy</title>
+        <link rel="icon" href="/assets/nerofy/img/logo-180.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/assets/nerofy/css/shared.css" rel="stylesheet">
+        <link href="/assets/nerofy/css/overrides.css" rel="stylesheet">
+    </head>
+    <body data-bs-theme="dark">
+        <div class="content" id="top">
+            <div id="header">
+                <div class="header-content">
+                    <div class="flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+                        <h1 style="font-size: 5rem; font-weight: 1000; color: var(--bs-primary);" class="excluded-italic bs-primary text-center">NEROFY NETWORK</h1>
+                        <h2 class="text-center">Unsere Nerofy-Dienste</h2>
+                        <br>
+                        <h6>Achtung: Diese Seite ist noch im Aufbau, dies ist eine Vorschau, damit man die Dienste bereits sehen kann.</h6>
+                    </div>
+                    <a style="font-size: 2rem" type="button" class="btn btn-transparent flex-grow-0 mb-5 animation-float" href="#start">
+                        ▼
+                    </a>
+                </div>
+            </div>
+            <hr id="start">
+            <div class="container d-flex flex-column justify-content-center align-items-center pb-3 px-5 pt-0">
+                <div class="d-flex flex-column gap-3">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <h3>Minedorf</h3>
+                            <hr>
+                        </div>
+                        <div class="card-body d-flex gap-3">
+                            <h4 class="flex-grow-1 w-100">
+                                <strong>Die größte Minecraft Stadt.</strong><br>Minedorf ist mehr als nur eine Stadt irgendwo in der Minecraft-Welt. Die Minedorf-Map geht weit über die eigentliche Stadt hinaus. Wir arbeiten seit fast 9 Jahren stetig an der Map und verbessern sie jeden Tag weiter.
+                            </h4>
+                        </div>
+                        <div class="card-footer p-1" style="border-radius: var(--bs-border-radius-lg);">
+                            <a type="button" class="btn btn-primary" href="https://www.minedorf.com" target="_blank">Aufrufen</a> <span class="user-select-all p-1 px-2 m-2" style="border-radius: var(--bs-border-radius); background: #ffffff15;"><span class="user-select-none">IP: </span>play.minedorf.com</span>
+                        </div>
+                    </div>
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <h3>Wolkenspeicher</h3>
+                            <hr>
+                        </div>
+                        <div class="card-body d-flex gap-3">
+                            <h4>
+                                Wolkenspeicher ist eine von Nerofy betriebene Cloud um Mitgliedern einfaches Filesharing, Aufgabenmanagement und mehr zu vereinfachen.<br>
+                                <br>
+                                <a type="button" class="btn btn-primary" href="https://www.wolkenspeicher.cloud" target="_blank">Aufrufen</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/nerofy/js/shared.js"></script>
+        <script>
+            addEventListener("DOMContentLoaded", () => {
+                initMenu().then(function() {
+                    document.getElementById("menu").querySelector(".network-link").classList.add("active");
+                });
+            });
+        </script>
+    </body>
+</html>

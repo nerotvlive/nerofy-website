@@ -11,7 +11,7 @@ async function initMenu() {
             menuContent += "<li class='nav-item'><a class='creators-link btn btn-transparent' aria-current='page' href='/creators.html'>Creator</a></li>";
             menuContent += "<li class='nav-item'><a class='network-link btn btn-transparent' aria-current='page' href='/network.html'>Netzwerk</a></li>";
 
-            let menuContent2 = "<a type='button' class='btn btn-secondary' href='https://wolkenspeicher.cloud' target='_blank'>Wolkenspeicher</a>"
+            let menuContent2 = "<a type='button' class='btn btn-primary' href='https://wolkenspeicher.cloud' target='_blank'>Wolkenspeicher</a>"
 
 
             menu = menu.replace("%1",menuContent).replace("%2",menuEnd.replace("%",menuContent2));
@@ -23,7 +23,7 @@ async function initMenu() {
 function addFooter() {
     if(!document.getElementById("menu")) {
         const content = document.querySelector(".content");
-        let footer = "<div class='container-fluid bg-black p-3 py-5 w-100 d-flex justify-content-center align-items-center text-center'><p class='m-0 p-0 opacity-75'><a class='link' href='https://nerofy.de/old/rechtliches' target='_blank'>Impressum & Datenschutzerklärung</a><br>©copyright 2026 Nerofy Network. Alle Rechte vorbehalten.</p></div>";
+        let footer = "<div class='container-fluid bg-black p-3 py-5 w-100 d-flex justify-content-center align-items-center text-center'><p class='m-0 p-0 opacity-75'><a class='link' href='https://nerofy.de/old/rechtliches' target='_blank'>Impressum & Datenschutzerklärung</a><br>©copyright 2026 Zyneon Studios. Alle Rechte vorbehalten.</p></div>";
         content.innerHTML += footer;
     }
 }
