@@ -8,11 +8,12 @@ async function initMenu() {
             let menuEnd = "<div class='d-flex gap-2'>%</div>"
 
             let menuContent = "<li class='nav-item'><a class='index-link btn btn-transparent' aria-current='page' href='/'>Start</a></li>";
-            menuContent += "<li class='nav-item'><a class='creators-link btn btn-transparent' aria-current='page' href='/creators.html'>Creator</a></li>";
-            menuContent += "<li class='nav-item'><a class='network-link btn btn-transparent' aria-current='page' href='/network.html'>Netzwerk</a></li>";
+            menuContent += "<li class='nav-item'><a class='creators-link btn btn-transparent' aria-current='page' href='/creators.html'>Creators</a></li>";
+            menuContent += "<li class='nav-item'><a class='network-link btn btn-transparent' aria-current='page' href='/network.html'>Network</a></li>";
 
-            let menuContent2 = "<a type='button' class='btn btn-secondary' href='https://wolkenspeicher.cloud' target='_blank'>Wolkenspeicher</a>"
-            menuContent2 += "<a type='button' class='btn btn-primary' href='https://discord.gg/hXSzqJEsSk' target='_blank'>Discord Server</a>";
+            let menuContent2 = "<a type='button' class='btn btn-secondary' href='https://wolkenspeicher.cloud' target='_blank'><i class=\"bi bi-cloud-haze2-fill\"></i></a>"
+            menuContent2 += "<a type='button' class='btn btn-secondary' href='https://discord.gg/hXSzqJEsSk' target='_blank'><i class=\"bi bi-discord\"></i></a>";
+            //menuContent2 += "<a type='button' class='btn btn-primary' href='https://discord.gg/hXSzqJEsSk' target='_blank'>Mitglied werden</a>";
 
 
             menu = menu.replace("%1",menuContent).replace("%2",menuEnd.replace("%",menuContent2));
