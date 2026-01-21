@@ -11,7 +11,8 @@ async function initMenu() {
             menuContent += "<li class='nav-item'><a class='creators-link btn btn-transparent' aria-current='page' href='/creators.html'>Creator</a></li>";
             menuContent += "<li class='nav-item'><a class='network-link btn btn-transparent' aria-current='page' href='/network.html'>Netzwerk</a></li>";
 
-            let menuContent2 = "<a type='button' class='btn btn-primary' href='https://wolkenspeicher.cloud' target='_blank'>Wolkenspeicher</a>"
+            let menuContent2 = "<a type='button' class='btn btn-secondary' href='https://wolkenspeicher.cloud' target='_blank'>Wolkenspeicher</a>"
+            menuContent2 += "<a type='button' class='btn btn-primary' href='https://discord.gg/hXSzqJEsSk' target='_blank'>Discord Server</a>";
 
 
             menu = menu.replace("%1",menuContent).replace("%2",menuEnd.replace("%",menuContent2));
