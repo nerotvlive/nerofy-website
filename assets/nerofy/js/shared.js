@@ -25,8 +25,8 @@ async function initMenu() {
 function addFooter() {
     if(!document.getElementById("menu")) {
         const content = document.querySelector(".content");
-        let footer = "<div class='container-fluid bg-black p-3 py-5 w-100 d-flex justify-content-center align-items-center text-center'><p class='m-0 p-0 opacity-75'><a class='link' href='https://nerofy.de/old/rechtliches' target='_blank'>Impressum & Datenschutzerklärung</a><br>©copyright 2026 Zyneon Studios. Alle Rechte vorbehalten.</p></div>";
+        let footer = "";
         content.innerHTML += footer;
     }
 }
-addFooter();
+//addFooter();

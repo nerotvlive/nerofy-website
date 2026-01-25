@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta http-equiv="refresh" content="0; url=old/rechtliches">
-    <meta http-equiv="refresh" content="1; url=old/rechtliches">
-    <meta http-equiv="refresh" content="3; url=old/rechtliches">
-    <script>
-        location.href = "old/rechtliches.html";
-    </script>
-    <title>Nerofy</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rechtliches « Nerofy</title>
+        <link rel="icon" href="/assets/nerofy/img/logo-180.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/bootstrap/icons/font/bootstrap-icons.min.css">
+        <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/assets/nerofy/css/shared.css" rel="stylesheet">
+        <link href="/assets/nerofy/css/overrides.css" rel="stylesheet">
+    </head>
+    <body data-bs-theme="dark">
+        <div class="content" id="top">
+            <div id="header">
+                <div class="header-content">
+                    <div class="flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+                        <h1 style="font-size: 5rem; font-weight: 1000; color: var(--bs-primary);" class="excluded-italic bs-primary text-center">RECHTLICHES</h1>
+                        <h2 class="text-center">Bitte wähle die Ressource aus, die du öffnen möchtest.</h2>
+                        <br>
+                        <div class="d-flex flex-row gap-2">
+                            <a type="button" class="btn btn-secondary" href="impressum.html">Impressum</a>
+                            <a type="button" class="btn btn-secondary" href="datenschutz.html">Datenschutzerklärung</a>
+                        </div>
+                    </div>
+                    <a style="font-size: 2rem" type="button" class="btn btn-transparent flex-grow-0 mb-5 animation-float" href="#start">
+                        ▼
+                    </a>
+                </div>
+            </div>
+            <hr id="start">
+            <div class="container d-flex flex-column justify-content-center align-items-center pb-3 px-5 pt-0">
+
+            </div>
+            <div id="footer">
+                <p class='m-0 p-0 opacity-75'>
+                    <a class='link' href='/impressum.html' target='_blank'>Impressum</a> & <a class='link' href='/datenschutz.html' target='_blank'>Datenschutzerklärung</a>
+                    <br>©copyright 2026 Zyneon Studios. Alle Rechte vorbehalten.
+                </p>
+            </div>
+        </div>
+        <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/nerofy/js/shared.js"></script>
+        <script>
+            addEventListener("DOMContentLoaded", () => {
+                initMenu().then(function() {
+                    document.getElementById("menu").querySelector(".network-link").classList.add("active");
+                });
+            });
+        </script>
+    </body>
 </html>
